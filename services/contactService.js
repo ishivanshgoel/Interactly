@@ -38,7 +38,7 @@ async function createContactService(first_name, last_name, email, phone_number, 
           });
         return response["data"]["contact"];
     } else {
-        return "Not Supported"
+        return "data store type not supported"
     }
 }
 
@@ -76,7 +76,7 @@ async function updateContactService(contact_id, email, phone_number, data_store)
           });
         return response["data"]["contact"];
     } else {
-        return "Not Supported"
+        return "data store type not supported"
     }
 }
 
@@ -96,7 +96,7 @@ async function deleteContactService(contact_id, data_store) {
           });
         return response["data"];
     } else {
-        return "Not Supported"
+        return "data store type not supported"
     }
     
 }
@@ -117,7 +117,7 @@ async function getContactService(contact_id, data_store) {
         })
         return response["data"]["contact"];
     } else {
-        return "Not Supported"
+        return "data store type not supported"
     }
 }
 
